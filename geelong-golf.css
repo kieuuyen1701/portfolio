@@ -1,0 +1,347 @@
+.geelong-page {
+    padding-top: 8rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.logo span {
+    color: var(--main-color);
+}
+.header .btn,
+.geelong-page .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    background: transparent;
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.header .btn:hover,
+.geelong-page .btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1.5rem rgba(127, 255, 212, 0.25);
+}
+.header .btn i,
+.geelong-page .btn i {
+    font-size: 1.8rem;
+}
+.geelong-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 12rem 9% 7rem;
+    background: var(--bg-color);
+}
+.geelong-hero-content {
+    min-width: 0;
+}
+.case-study-tag {
+    color: var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+.geelong-hero h1 {
+    color: var(--text-color);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    margin-bottom: 1.5rem;
+}
+.geelong-hero h1 span {
+    color: var(--main-color);
+}
+.geelong-hero h2 {
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.geelong-intro {
+    max-width: 650px;
+    color: #ccc;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.geelong-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+.geelong-tags span {
+    display: inline-block;
+    color: var(--main-color);
+    border: 1px solid rgba(127, 255, 212, 0.5);
+    border-radius: 2rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.geelong-hero-image {
+    width: 100%;
+    min-width: 0;
+}
+.geelong-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+    border: 1px solid rgba(127, 255, 212, 0.25);
+    background: #fff;
+}
+.geelong-hero-image p {
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 1rem;
+}
+.geelong-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 4rem 8rem;
+}
+.geelong-section {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    gap: 2rem;
+    padding: 3.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.case-study-number {
+    color: var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+}
+.geelong-section h3 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+.geelong-section p,
+.geelong-section li {
+    color: #ccc;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.geelong-section ul {
+    padding-left: 2rem;
+}
+.geelong-section li {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.geelong-canvas {
+    width: 100%;
+    margin: 3rem 0;
+}
+.geelong-canvas img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1.2rem;
+    border: 1px solid rgba(127, 255, 212, 0.25);
+    background: #fff;
+}
+.geelong-canvas p {
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.geelong-recommendation {
+    margin: 4rem 0;
+    padding: 3rem;
+    border: 1px solid var(--main-color);
+    border-radius: 2rem;
+    background: rgba(127, 255, 212, 0.06);
+}
+.geelong-recommendation .case-study-tag {
+    margin-bottom: 1rem;
+}
+.geelong-recommendation h3 {
+    color: var(--main-color);
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+.geelong-recommendation p:not(.case-study-tag) {
+    color: #ccc;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.geelong-disclaimer {
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin: 3rem 0;
+}
+.footer {
+    padding: 3rem 9%;
+    background: var(--second-bg-color);
+    text-align: center;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.footer-social a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+.copyright {
+    color: #ccc;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+@media (max-width: 900px) {
+    .header {
+        padding: 1.8rem 6%;
+    }
+
+    .geelong-hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 10rem 6% 5rem;
+    }
+
+    .geelong-hero h1 {
+        font-size: 4rem;
+    }
+
+    .geelong-hero-image {
+        max-width: 650px;
+    }
+
+    .geelong-content {
+        padding: 2rem 6% 6rem;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 1.5rem 5%;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .header .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.1rem;
+        gap: 0.4rem;
+    }
+
+    .header .btn i {
+        font-size: 1.5rem;
+    }
+
+    .geelong-hero {
+        padding: 9rem 5% 4rem;
+    }
+
+    .geelong-hero h1 {
+        font-size: 3.3rem;
+    }
+
+    .geelong-hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .geelong-intro {
+        font-size: 1.5rem;
+    }
+
+    .geelong-hero-image img {
+        border-radius: 1.2rem;
+    }
+
+    .geelong-content {
+        padding: 1rem 5% 5rem;
+    }
+
+    .geelong-section {
+        grid-template-columns: 3rem minmax(0, 1fr);
+        gap: 1rem;
+        padding: 2.5rem 0;
+    }
+
+    .geelong-section h3 {
+        font-size: 2.1rem;
+    }
+
+    .geelong-section p,
+    .geelong-section li {
+        font-size: 1.5rem;
+    }
+
+    .geelong-recommendation {
+        margin: 3rem 0;
+        padding: 2rem;
+        border-radius: 1.5rem;
+    }
+
+    .geelong-recommendation h3 {
+        font-size: 2.5rem;
+    }
+
+    .geelong-recommendation p:not(.case-study-tag) {
+        font-size: 1.5rem;
+    }
+}
