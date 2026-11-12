@@ -1,0 +1,503 @@
+.geelong-page {
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    font-family: var(--body-font);
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: rgba(23, 19, 21, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(201, 135, 155, 0.15);
+}
+.logo {
+    color: var(--text-color);
+    font-family: var(--serif-font);
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.logo span {
+    color: var(--main-color);
+}
+.header .btn,
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--deep-rose);
+    border-radius: 3rem;
+    background: var(--deep-rose);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.header .btn:hover,
+.btn:hover {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--bg-color);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(201, 135, 155, 0.3);
+}
+.header .btn i,
+.geelong-page .btn i {
+    font-size: 1.8rem;
+}
+.geelong-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 8rem 9% 7rem;
+    background: var(--bg-color);
+}
+.geelong-hero-content {
+    min-width: 0;
+}
+.case-study-tag {
+    color: var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.geelong-tags,
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+.geelong-tags span,
+.skills-list span {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 1.6rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+
+    color: var(--accent-color);
+    background: rgba(201, 135, 155, 0.08);
+    border: 1px solid rgba(201, 135, 155, 0.4);
+    border-radius: 3rem;
+
+    transition: all 0.3s ease;
+}
+
+.geelong-tags span:hover,
+.skills-list span:hover {
+    background: var(--deep-rose);
+    border-color: var(--main-color);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(201, 135, 155, 0.2);
+}
+.geelong-hero h1 {
+    color: var(--text-color);
+    font-family: var(--serif-font);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    margin-bottom: 1.5rem;
+}
+.geelong-hero h1 span {
+    color: var(--main-color);
+}
+.geelong-hero h2 {
+    color: var(--accent-color);
+    font-family: var(--serif-font);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.geelong-intro {
+    max-width: 650px;
+    color: var(--text-muted);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.geelong-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+.geelong-tags span {
+    display: inline-block;
+    color: var(--accent-color);
+    border: 1px solid rgba(201, 135, 155, 0.4);
+    border-radius: 2rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(201, 135, 155, 0.08);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+.geelong-tags span:hover {
+    background: var(--deep-rose);
+    border-color: var(--main-color);
+    box-shadow: 0 0 12px rgba(201, 135, 155, 0.2);
+}
+.geelong-hero-image {
+    width: 100%;
+    min-width: 0;
+}
+.geelong-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+    border: 1px solid rgba(201, 135, 155, 0.25);
+    background: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+.geelong-hero-image p {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 1rem;
+}
+.geelong-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 4rem 8rem;
+}
+.geelong-section {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    gap: 2rem;
+    padding: 3.5rem 0;
+    border-bottom: 1px solid rgba(201, 135, 155, 0.18);
+}
+.case-study-number {
+    color: var(--main-color);
+    font-family: var(--serif-font);
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+.geelong-section h3 {
+    color: var(--main-color);
+    font-family: var(--serif-font);
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+.geelong-section p,
+.geelong-section li {
+    color: var(--text-muted);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.geelong-section p {
+    margin-bottom: 1.8rem;
+    line-height: 1.9;
+}
+
+.geelong-section p:last-child {
+    margin-bottom: 0;
+}
+.geelong-section strong {
+    color: var(--text-color);
+    font-weight: 700;
+}
+.geelong-section ul {
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.geelong-section li {
+    padding-left: 0.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.9;
+}
+.geelong-section li::marker {
+    color: var(--main-color);
+}
+
+.geelong-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.metric-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    min-height: 15rem;
+
+    background: var(--card-color);
+    border: 1px solid rgba(201, 135, 155, 0.3);
+    border-radius: 1.5rem;
+
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--main-color);
+    box-shadow: 0 0 20px rgba(201, 135, 155, 0.15);
+}
+
+.metric-card h3 {
+    font-family: var(--serif-font);
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.metric-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.metric-card span {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+.geelong-canvas {
+    width: 100%;
+    margin: 3rem 0;
+}
+.geelong-canvas img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1.2rem;
+    border: 1px solid rgba(201, 135, 155, 0.25);
+    background: #fff;
+}
+.geelong-canvas p {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.geelong-recommendation {
+    margin: 4rem 0;
+    padding: 3rem;
+    border: 1px solid rgba(201, 135, 155, 0.5);
+    border-radius: 2rem;
+    background:linear-gradient(
+        135deg,
+        rgba(113, 61, 80, 0.3),
+        rgba(201, 135, 155, 0.07)
+    );
+}
+.geelong-recommendation .case-study-tag {
+    margin-bottom: 1rem;
+}
+.geelong-recommendation h3 {
+    color: var(--main-color);
+    font-family: var(--serif-font);
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+.geelong-recommendation p:not(.case-study-tag) {
+    color: var(--text-muted);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+.geelong-disclaimer {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(201, 135, 155, 0.06);
+    border: 1px solid rgba(201, 135, 155, 0.18);
+    border-radius: 1.5rem;
+}
+.footer {
+    padding: 3rem 9%;
+    background: var(--second-bg-color);
+    text-align: center;
+    border-top: 1px solid rgba(201, 135, 155, 0.15);
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer-social a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform: scale(1.15) translateY(-4px);
+    box-shadow: 0 0 18px rgba(201, 135, 155, 0.4);
+}
+.copyright {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+@media (max-width: 900px) {
+    .header {
+        padding: 1.8rem 6%;
+    }
+
+    .geelong-hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 9rem 6% 5rem;
+    }
+
+    .geelong-hero h1 {
+        font-size: 4rem;
+    }
+
+    .geelong-hero-image {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .geelong-content {
+        padding: 2rem 6% 6rem;
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 1.5rem 5%;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .header .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.1rem;
+        gap: 0.4rem;
+    }
+
+    .header .btn i {
+        font-size: 1.5rem;
+    }
+
+    .geelong-hero {
+        padding: 8rem 5% 4rem;
+    }
+
+    .geelong-hero h1 {
+        font-size: 3.3rem;
+    }
+
+    .geelong-hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .geelong-intro {
+        font-size: 1.5rem;
+    }
+
+    .geelong-hero-image img {
+        border-radius: 1.2rem;
+    }
+
+    .geelong-content {
+        padding: 1rem 5% 5rem;
+    }
+
+    .geelong-section {
+        grid-template-columns: 3rem minmax(0, 1fr);
+        gap: 1rem;
+        padding: 2.5rem 0;
+    }
+
+    .geelong-section h3 {
+        font-size: 2.1rem;
+    }
+
+    .geelong-section p,
+    .geelong-section li {
+        font-size: 1.5rem;
+    }
+
+    .geelong-recommendation {
+        margin: 3rem 0;
+        padding: 2rem;
+        border-radius: 1.5rem;
+    }
+
+    .geelong-recommendation h3 {
+        font-size: 2.5rem;
+    }
+
+    .geelong-recommendation p:not(.case-study-tag) {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .geelong-metrics {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .metric-card {
+        min-height: 13rem;
+    }
+
+    .metric-card h3 {
+        font-size: 2.7rem;
+    }
+
+    .geelong-tags span,
+    .skills-list span {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.3rem;
+    }
+
+    .case-study-number {
+        font-size: 1.8rem;
+    }
+}
